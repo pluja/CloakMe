@@ -3,7 +3,7 @@
 <p align="center"> Cloack your face from Big Brother </p>
 <br>
 
-CloackMe is a web interface implementation of the [](Fawkes) algorithm developed by researchers at SANDLab, University of Chicago. You can check out more information on their [website](http://sandlab.cs.uchicago.edu/fawkes/#code).
+CloackMe is a web interface implementation of the [Fawkes](Fawkes) algorithm developed by researchers at SANDLab, University of Chicago. You can check out more information on their [website](http://sandlab.cs.uchicago.edu/fawkes/#code).
 
 
 <h1 align="center"> SOON </h1>
