@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+<style>
+  img#loading {
+    width: 35px;
+    height: 35px;
+    display: none;
+    cursor: wait;
+    }
+</style>
+
+{% block content %}
+  <div class="ui center aligned text container">
+
+    <h2 class="ui icon header">
+      <img width="50px !important;" class="ui centered large image" src="{{ url_for('static', filename='faceglitch.gif') }}" alt="Header image">
+      <div class="content">
+        CloakMe
+        <div class="sub header">Cloak your face from facial recognition.</div>
+      </div>
+    </h2>
+
+    <div id="main-form" class="ui segment">
+    <div class="item">
+      <div class="content">
+          <form action = "{{ url_for('index') }}" method = "POST" enctype = "multipart/form-data">
+              <input type = "file" value="Browse..." name = "file"/> <br>
+              <input onclick="loading()" type = "submit" value="Cloak"/>
+          </form> <br>
+          <div class="description">
+            <ol>
+              <li> Upload an image to cloak a face.</li>
+              <li> It may take up to 60 seconds to process an image.</li>
+              <li> <a href="">Fawkes</a> algorithm will be applied.</li>
+              <li> The image will be downloaded automatically.</li>
+            </ol>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <img style="display: none;" class="ui centered small image" id="loading" src="{{ url_for('static', filename='load.gif') }}" alt="loading gif">
+  </div>
+<script>
+  function loading(){
+    document.getElementById("segment").style.display = "none"
+    document.getElementById("loading").style.display = "block"
+  }
+</script>
+{% endblock %}
