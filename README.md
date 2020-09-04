@@ -11,7 +11,17 @@ CloakMe is a web interface implementation of the [Fawkes](https://github.com/Sha
 #### Pre-installation
 You will need to install `python3.7` (version must be <3.8), `python3 pip` and `git`.
 
-#### Installation
+#### Quick Installation (Linux Only)
+1. Clone this repository:
+
+`git clone https://github.com/pluja/CloakMe`
+
+2. Change permissions and run setup file:
+
+`chmod a+x setup.sh`
+`./setup.sh`
+
+#### Manual Installation
 1. Clone this repository:
 
 `git clone https://github.com/pluja/CloakMe`
